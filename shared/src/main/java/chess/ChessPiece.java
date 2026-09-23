@@ -78,6 +78,18 @@ public class ChessPiece {
             case KNIGHT -> {
                 moves = pieceMoveOptions.knightPieceMoves(board, myPosition, color);
             }
+            case ROOK -> {
+                moves = pieceMoveOptions.rookPieceMoves(board, myPosition, color);
+            }
+            case BISHOP -> {
+                moves = pieceMoveOptions.bishopPieceMoves(board, myPosition, color);
+            }
+            case QUEEN -> {
+                moves = pieceMoveOptions.queenPieceMoves(board, myPosition, color);
+            }
+            case PAWN -> {
+                moves = pieceMoveOptions.pawnPieceMoves(board, myPosition, color);
+            }
         }
         return moves;
     }
